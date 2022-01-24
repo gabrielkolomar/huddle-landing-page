@@ -1,0 +1,126 @@
+:root {
+  --violet: #674baf;
+  --soft-magenta: #e882e8;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-image: url(./assets/bg-desktop.svg);
+  background-color: var(--violet);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  flex: 1;
+  grid-gap: 40px;
+}
+
+.header {
+  max-width: 1310px;
+  margin: 50px auto 0;
+  width: 100%;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.information {
+  max-width: 500px;
+}
+
+.information h1 {
+  font-size: 42px;
+  color: var(--white);
+}
+
+.information p {
+  font-size: 16px;
+  color: var(--white);
+  margin: 12px 0;
+}
+
+.information button {
+  background: var(--white);
+  height: 50px;
+  padding: 0 50px;
+  border: 0;
+  border-radius: 25px;
+  color: var(--violet);
+  font-size: 16px;
+  box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.3);
+  transition: 300ms;
+  border: 1px solid transparent;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.information button:hover {
+  background: transparent;
+  border-color: var(--white);
+  color: var(--white);
+  box-shadow: 0px 0 0 rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+  max-width: 1150px;
+  margin: 50px auto;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+}
+
+.social-media a {
+  color: var(--white);
+  border: 1px solid var(--white);
+  font-size: 20px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  transition: 300ms;
+}
+
+.social-media a:not(.social-media a:first-child) {
+  margin-left: 16px;
+}
+
+.social-media a:hover {
+  filter: brightness(0.8);
+}
