@@ -87,7 +87,7 @@ h4 {
   background: transparent;
   border-color: var(--white);
   color: var(--white);
-  box-shadow: 0px 0 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
 }
 
 .footer {
@@ -115,6 +115,7 @@ h4 {
   place-items: center;
   text-decoration: none;
   transition: 300ms;
+  box-shadow: 8px 5px 8px rgba(0, 0, 0, 0.3);
 }
 
 .social-media a:not(.social-media a:first-child) {
@@ -123,4 +124,50 @@ h4 {
 
 .social-media a:hover {
   filter: brightness(0.8);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    max-width: 100vw;
+    margin: 50px 0 0;
+    padding-left: 35px;
+  }
+
+  .container {
+    max-width: 100vw;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ilustration {
+    width: 330px;
+  }
+
+  .logo {
+    width: 150px;
+    margin-bottom: 100px;
+  }
+
+  .information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .information h1 {
+    font-size: 28px;
+  }
+
+  .information p {
+    font-size: 14px;
+  }
+
+  .footer {
+    max-width: 100vw;
+    align-items: center;
+    justify-content: center;
+  }
 }
